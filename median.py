@@ -9,13 +9,12 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
 
 
 numbers.sort()
 length = len(numbers)
 if length%2:
-    print(f"{numbers[length//2]} is the median")
+    print(numbers[length//2])
 else:
     avg = (numbers[length//2] + numbers[(length//2)-1]) /2
-    print(f"{avg} is the median")
+    print(avg)
